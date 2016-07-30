@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="company.sumapositiva.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:id="@+id/primernum"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:background="#1e8d41"
+            android:layout_marginTop="60dp"
+            android:inputType="text" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/segundonum"
+            android:background="#1e8d41"
+            android:layout_marginTop="64dp"
+            android:layout_below="@+id/primernum"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="operacion"
+            android:id="@+id/operador"
+            android:layout_marginTop="41dp"
+            android:layout_below="@+id/segundonum"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:id="@+id/total"
+            android:layout_marginTop="44dp"
+            android:layout_below="@+id/operador"
+            android:layout_toStartOf="@+id/operador" />
+    </RelativeLayout>
+</RelativeLayout>
